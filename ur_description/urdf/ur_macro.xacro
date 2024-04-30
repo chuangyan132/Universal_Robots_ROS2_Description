@@ -81,8 +81,9 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 ${pi}"/>
         <geometry>
-          <xacro:get_mesh name="base" type="visual"/>
-        </geometry>
+					<mesh
+						filename="package://ur_description/meshes/ur5e/visual/base.dae" />
+				</geometry>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 ${pi}"/>
@@ -98,7 +99,8 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 ${pi}"/>
         <geometry>
-          <xacro:get_mesh name="shoulder" type="visual"/>
+          <mesh
+            filename="package://ur_description/meshes/ur5e/visual/shoulder.dae" />
         </geometry>
       </visual>
       <collision>
@@ -115,7 +117,8 @@
       <visual>
         <origin xyz="0 0 ${shoulder_offset}" rpy="${pi/2} 0 ${-pi/2}"/>
         <geometry>
-          <xacro:get_mesh name="upper_arm" type="visual"/>
+          <mesh
+            filename="package://ur_description/meshes/ur5e/visual/upperarm.dae" />
         </geometry>
       </visual>
       <collision>
@@ -132,7 +135,8 @@
       <visual>
         <origin xyz="0 0 ${elbow_offset}" rpy="${pi/2} 0 ${-pi/2}"/>
         <geometry>
-          <xacro:get_mesh name="forearm" type="visual"/>
+          <mesh
+            filename="package://ur_description/meshes/ur5e/visual/forearm.dae" />
         </geometry>
       </visual>
       <collision>
@@ -150,7 +154,8 @@
       <visual>
       	<origin xyz="0 0 ${visual_params}" rpy="${pi/2} 0 0"/>
         <geometry>
-          <xacro:get_mesh name="wrist_1" type="visual"/>
+          <mesh
+            filename="package://ur_description/meshes/ur5e/visual/wrist1.dae" />
         </geometry>
       </visual>
       <collision>
@@ -168,7 +173,8 @@
       <visual>
         <origin xyz="0 0 ${visual_params}" rpy="0 0 0"/>
         <geometry>
-          <xacro:get_mesh name="wrist_2" type="visual"/>
+          <mesh
+            filename="package://ur_description/meshes/ur5e/visual/wrist2.dae" />
         </geometry>
       </visual>
       <collision>
@@ -186,7 +192,8 @@
       <visual>
         <origin xyz="0 0 ${visual_params}" rpy="${pi/2} 0 0"/>
         <geometry>
-          <xacro:get_mesh name="wrist_3" type="visual"/>
+          <mesh
+            filename="package://meshes/ur5e/visual/wrist3.dae" />
         </geometry>
       </visual>
       <collision>
