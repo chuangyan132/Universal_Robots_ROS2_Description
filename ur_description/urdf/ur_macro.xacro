@@ -82,7 +82,7 @@
         <origin xyz="0 0 0" rpy="0 0 ${pi}"/>
         <geometry>
 					<mesh
-						filename="package://ur_description/meshes/ur5e/visual/base.dae" />
+						filename="package://ur_description/meshes/ur5e/visual/base_link.dae" />
 				</geometry>
       </visual>
       <collision>
@@ -193,7 +193,7 @@
         <origin xyz="0 0 ${visual_params}" rpy="${pi/2} 0 0"/>
         <geometry>
           <mesh
-            filename="package://meshes/ur5e/visual/wrist3.dae" />
+            filename="package://ur_description/meshes/ur5e/visual/wrist3.dae" />
         </geometry>
       </visual>
       <collision>
